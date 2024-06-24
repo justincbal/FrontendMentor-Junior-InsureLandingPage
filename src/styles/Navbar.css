@@ -1,0 +1,70 @@
+@import './constants.css';
+
+nav {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.hamburgerMenu {
+    border: none;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--clr-light-gray);
+    font-size: 2rem;
+}
+
+ul {
+    background-color: var(--clr-dark-violet);
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+    padding-top: 3rem;
+    /* padding: 1rem; */
+}
+
+li {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    /* margin: 0 1rem; */
+    padding: 0 2rem;
+} 
+
+
+
+a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 1rem;
+    border: 2px solid transparent;
+}
+
+a:hover {
+    border: 2px solid var(--clr-light-gray);
+}
+
+.mobileMenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.mobileNavPattern {
+    margin-top: auto;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
