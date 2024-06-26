@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="#">ACCOUNT</a>
           </li>
           <li>
-            <a href="#">VIEW PLANS</a>
+            <a className="viewPlans" href="#">VIEW PLANS</a>
           </li>
           <img
             src="/images/bg-pattern-mobile-nav.svg"

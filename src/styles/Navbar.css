@@ -49,11 +49,12 @@ a {
     display: inline-block;
     padding: 1rem;
     border: 2px solid transparent;
+    
 }
 
-a:hover {
+/* a:hover {
     border: 2px solid var(--clr-light-gray);
-}
+} */
 
 .mobileMenu {
     display: none;
@@ -67,4 +68,56 @@ a:hover {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+
+.viewPlans {
+    border: 2px solid var(--clr-light-gray);
+}
+
+@media (min-width: 800px) {
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        height: auto;
+        width: auto;
+        padding: 0;
+        gap: 1rem;
+        background-color: white;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    
+
+    a {
+        color: var(--clr-gray-violet);
+        font-size: 1rem;
+        text-wrap: nowrap;
+        padding: .5rem;
+    }
+
+    a:hover {
+        color: var(--clr-darker-violet);
+    }
+
+    .mobileNavPattern {
+        display: none;
+    }
+
+    .viewPlans {
+        color: var(--clr-darker-violet);
+        border: 2px solid var(--clr-darker-violet);
+    }
+
+    .viewPlans:hover {
+        background-color: var(--clr-darker-violet);
+        color: var(--clr-light-gray);
+    }
 }
